@@ -20,7 +20,7 @@ class CheckoutPage(BasePage):
     def complete_checkout(self):
         self.wait_for_selector_and_click(CONTINUE_BUTTON_SELECTOR)
         self.wait_for_selector_and_click(FINISH_BUTTON_SELECTOR)
-        self.assert_checkout_completed_text_present_on_page('Checkout: Complete!')
+        self.assert_text_present_on_page('Checkout: Complete!')
 
     def logout(self):
         self.wait_for_selector_and_click(BURGER_BUTTON_SELECTOR)

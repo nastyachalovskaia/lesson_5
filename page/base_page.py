@@ -33,9 +33,6 @@ class BasePage:
     def assert_element_is_visible(self, selector):
         expect(self.page.locator(selector)).to_be_visible()
 
-    def assert_checkout_completed_text_present_on_page(self, text):
-        expect(self.page.locator("body")).to_contain_text(text)
-
     def assert_text_present_on_page(self, text):
         expect(self.page.locator("body")).to_contain_text(text)
 
